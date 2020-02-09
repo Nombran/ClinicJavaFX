@@ -1,0 +1,10 @@
+
+.text-field {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: #ff7b00;
+}
+
+.combo-box{
+    -fx-prompt-text-fill: white;
+}
+

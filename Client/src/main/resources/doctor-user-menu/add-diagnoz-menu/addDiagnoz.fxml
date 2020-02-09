@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" stylesheets="@addDiagnoz.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.clinicFX.controller.AddDiagnosisController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="380.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="57.0" layoutY="193.0" prefHeight="30.0" prefWidth="266.0" ripplerFill="WHITE" style="-fx-background-color: #00f50c;" text="Сохранить" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="diagnoz" focusColor="#00f50c" labelFloat="true" layoutX="59.0" layoutY="101.0" prefHeight="25.0" prefWidth="262.0" promptText="Диагноз" style="/: white;" unFocusColor="WHITE" />
+            <FontAwesomeIcon fx:id="exit" fill="#00f50c" iconName="CLOSE" layoutX="335.0" layoutY="47.0" size="2em" wrappingWidth="18.85714340209961" />
+            <FontAwesomeIcon fx:id="backButton" fill="WHITE" iconName="ARROW_LEFT" layoutX="24.0" layoutY="47.0" scaleX="1.6" size="2em" />
+            <FontAwesomeIcon fill="#00f50c" iconName="PLUS" layoutX="32.0" layoutY="122.0" size="2em" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

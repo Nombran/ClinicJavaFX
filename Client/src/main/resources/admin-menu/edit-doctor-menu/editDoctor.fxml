@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" stylesheets="@editDoctor.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.clinicFX.controller.EditDoctorController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="603.0" prefWidth="380.0" style="-fx-background-color: #3D4956;" stylesheets="@editDoctor.css">
+         <children>
+            <JFXPasswordField fx:id="passwordRegistr" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="138.0" prefHeight="25.0" prefWidth="262.0" promptText="Пароль" unFocusColor="WHITE" />
+            <JFXTextField fx:id="name" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="197.0" prefHeight="25.0" prefWidth="262.0" promptText="Имя" unFocusColor="WHITE" />
+            <JFXTextField fx:id="surname" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="248.0" prefHeight="25.0" prefWidth="262.0" promptText="Фамилия" unFocusColor="WHITE" />
+            <JFXTextField fx:id="lastname" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="308.0" prefHeight="25.0" prefWidth="262.0" promptText="Отчество" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="branchComboBox" focusColor="#00f50c" layoutX="54.0" layoutY="361.0" prefHeight="25.0" prefWidth="262.0" promptText="Отделение" unFocusColor="WHITE" />
+            <JFXTextField fx:id="position" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="471.0" prefHeight="25.0" prefWidth="262.0" promptText="Должность" unFocusColor="WHITE" />
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="56.0" layoutY="527.0" prefHeight="30.0" prefWidth="266.0" ripplerFill="WHITE" style="-fx-background-color: #00f50c;" text="Сохранить" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="loginRegistr" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="88.0" prefHeight="25.0" prefWidth="262.0" promptText="Логин" style="/: white;" unFocusColor="WHITE" />
+            <FontAwesomeIcon fill="#00f50c" iconName="USER" layoutX="26.0" layoutY="111.0" size="2em" />
+            <FontAwesomeIcon fill="#00f50c" iconName="KEY" layoutX="26.0" layoutY="160.0" size="2em" />
+            <FontAwesomeIcon fx:id="exit" fill="#00f50c" iconName="CLOSE" layoutX="346.0" layoutY="22.0" size="2em" wrappingWidth="18.85714340209961" />
+            <JFXTextField fx:id="specialization" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="416.0" prefHeight="25.0" prefWidth="262.0" promptText="Специализвация" unFocusColor="WHITE" />
+            <FontAwesomeIcon fx:id="backButton" fill="WHITE" iconName="ARROW_LEFT" layoutX="9.0" layoutY="24.0" scaleX="1.6" size="2em" />
+            <FontAwesomeIcon fill="#00f50c" iconName="AMBULANCE" layoutX="22.0" layoutY="383.0" size="2em" />
+            <FontAwesomeIcon fill="#00f50c" iconName="PLUS" layoutX="27.0" layoutY="437.0" size="2em" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

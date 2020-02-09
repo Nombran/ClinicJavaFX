@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3D4956;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.clinic.controller.StartMenuController">
+   <children>
+      <JFXButton fx:id="startServerButton" layoutX="19.0" layoutY="12.0" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: #00f50c;" text="Запуск сервера" />
+      <Text fx:id="statusText" fill="RED" layoutX="161.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сервер выключен" wrappingWidth="75.13671875" />
+      <JFXButton fx:id="interruptServerButton" layoutX="19.0" layoutY="67.0" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: RED;" text="Остановка сервера" />
+      <JFXTextArea fx:id="logArea" editable="false" layoutX="236.0" layoutY="35.0" prefHeight="342.0" prefWidth="338.0" style="-fx-background-color: white;" />
+      <Text fill="#00ff46" layoutX="295.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Хронология обращения к серверу" wrappingWidth="246.0" />
+      <FontAwesomeIcon fx:id="exit" fill="#00f50c" iconName="CLOSE" layoutX="565.0" layoutY="22.0" size="2em" />
+   </children>
+</AnchorPane>

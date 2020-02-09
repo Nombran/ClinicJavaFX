@@ -1,0 +1,5 @@
+
+.text-field {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: #ff7b00;
+}

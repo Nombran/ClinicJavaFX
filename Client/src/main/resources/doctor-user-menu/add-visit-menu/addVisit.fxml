@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" stylesheets="@addVisitStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.clinicFX.controller.AddVisitController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="603.0" prefWidth="380.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="56.0" layoutY="527.0" prefHeight="30.0" prefWidth="266.0" ripplerFill="WHITE" style="-fx-background-color: #00f50c;" text="Сохранить" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="doctorField" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="88.0" prefHeight="25.0" prefWidth="262.0" promptText="Врач" style="/: white;" unFocusColor="WHITE" />
+            <FontAwesomeIcon fx:id="exit" fill="#00f50c" iconName="CLOSE" layoutX="346.0" layoutY="22.0" size="2em" wrappingWidth="18.85714340209961" />
+            <FontAwesomeIcon fx:id="backButton" fill="WHITE" iconName="ARROW_LEFT" layoutX="9.0" layoutY="24.0" scaleX="1.6" size="2em" />
+            <FontAwesomeIcon fill="#00f50c" iconName="PLUS" layoutX="26.0" layoutY="109.0" size="2em" />
+            <JFXDatePicker fx:id="visitDate" defaultColor="#00f50c" layoutX="54.0" layoutY="184.0" prefHeight="28.0" prefWidth="305.0" promptText="Дата приема" />
+            <JFXTimePicker fx:id="visitTime" defaultColor="#00f50c" layoutX="54.0" layoutY="289.0" prefHeight="28.0" prefWidth="305.0" promptText="Время приема" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

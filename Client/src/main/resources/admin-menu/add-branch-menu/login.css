@@ -1,0 +1,19 @@
+.tab {
+    -fx-pref-width:190;
+    -fx-pref-height: 50;
+}
+
+.text-field {
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: #ff7b00;
+}
+
+.combo-box{
+    -fx-prompt-text-fill: white;
+}
+
+.text-area{
+    -fx-prompt-text-fill: white;
+    -fx-border-color: white;
+    -fx-text-fill: #ff7b00;
+}

@@ -1,0 +1,26 @@
+.combo-box{
+    -fx-prompt-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.chart-title{
+    -fx-text-fill: white;
+    -fx-font-weight:bold;
+}
+
+.chart-legend {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+.axis {
+    -fx-tick-label-fill: #00f50c;
+}
+
+.axis-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+
+

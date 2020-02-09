@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsuir.clinicFX.controller.Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="376.0" style="-fx-background-color: #3D4956;" stylesheets="@login.css">
+          <children>
+            <StackPane fx:id="stackPane" layoutY="23.0" prefHeight="583.0" prefWidth="395.0">
+               <children>
+                  <JFXTabPane prefHeight="583.0" prefWidth="364.0" style="-fx-background-color: #3D4956;">
+                     <tabs>
+                        <Tab style="-fx-background-color: #3D4956;" text="Вход">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="359.0" style="-fx-background-color: #3D4956;">
+                                 <children>
+                                    <JFXTextField fx:id="loginInput" focusColor="WHITE" labelFloat="true" layoutX="67.0" layoutY="136.0" prefHeight="25.0" prefWidth="262.0" promptText="Username" unFocusColor="#ff7b00" />
+                                    <JFXPasswordField fx:id="passwordInput" focusColor="WHITE" labelFloat="true" layoutX="67.0" layoutY="195.0" prefHeight="25.0" prefWidth="262.0" promptText="Password" unFocusColor="#ff5e00" />
+                                    <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="71.0" layoutY="326.0" prefHeight="54.0" prefWidth="253.0" ripplerFill="WHITE" style="-fx-background-color: #f39C63;" text="Login" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <FontAwesomeIcon fill="#ff5e00" iconName="USER" layoutX="38.0" layoutY="160.0" size="2em" />
+                                    <FontAwesomeIcon fill="#ff5e00" glyphStyle="-fx-background-color:#00f50c" iconName="KEY" layoutX="39.0" layoutY="217.0" size="2em" />
+                                    <JFXCheckBox fx:id="isDoctor" checkedColor="#00ff6a" layoutX="277.0" layoutY="253.0" text="Врач" textFill="WHITE" unCheckedColor="#ff6900" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #3D4956;" text="Регистрация">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="548.0" prefWidth="327.0" style="-fx-background-color: #3D4956;">
+                                 <children>
+                                    <JFXPasswordField fx:id="passwordRegistr" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="89.0" prefHeight="25.0" prefWidth="262.0" promptText="Пароль" unFocusColor="WHITE" />
+                                    <JFXTextField fx:id="name" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="141.0" prefHeight="25.0" prefWidth="262.0" promptText="Имя" unFocusColor="WHITE" />
+                                    <JFXTextField fx:id="surname" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="194.0" prefHeight="25.0" prefWidth="262.0" promptText="Фамилия" unFocusColor="WHITE" />
+                                    <JFXTextField fx:id="lastname" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="249.0" prefHeight="25.0" prefWidth="262.0" promptText="Отчество" unFocusColor="WHITE" />
+                                    <JFXDatePicker fx:id="birthday" defaultColor="#00f50c" layoutX="54.0" layoutY="304.0" prefHeight="28.0" prefWidth="277.0" promptText="День Рождения" />
+                                    <JFXComboBox fx:id="socialStatus" focusColor="#00f50c" layoutX="54.0" layoutY="365.0" prefHeight="25.0" prefWidth="271.0" promptText="Социльный статус" unFocusColor="WHITE" />
+                                    <JFXTextField fx:id="phoneNumber" focusColor="#00f50c" labelFloat="true" layoutX="59.0" layoutY="421.0" prefHeight="25.0" prefWidth="262.0" promptText="Номер телефона" unFocusColor="WHITE" />
+                                    <JFXButton fx:id="registrationButton" buttonType="RAISED" layoutX="59.0" layoutY="468.0" prefHeight="30.0" prefWidth="266.0" ripplerFill="WHITE" style="-fx-background-color: #00f50c;" text="Зарегистрироваться" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="loginRegistr" focusColor="#00f50c" labelFloat="true" layoutX="54.0" layoutY="39.0" prefHeight="25.0" prefWidth="262.0" promptText="Логин" style="/: white;" unFocusColor="WHITE" />
+                                    <FontAwesomeIcon fill="#00f50c" iconName="USER" layoutX="26.0" layoutY="62.0" size="2em" />
+                                    <FontAwesomeIcon fill="#00f50c" iconName="KEY" layoutX="26.0" layoutY="110.0" size="2em" />
+                                    <FontAwesomeIcon fill="#00f50c" iconName="PHONE" layoutX="35.0" layoutY="442.0" size="2em" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </StackPane>
+            <FontAwesomeIcon fx:id="exit" fill="#00f50c" iconName="CLOSE" layoutX="347.0" layoutY="24.0" size="2em" />
+          </children>
+      </AnchorPane>
+   </children>
+</StackPane>

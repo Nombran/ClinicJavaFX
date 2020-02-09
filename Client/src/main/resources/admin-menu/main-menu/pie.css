@@ -1,0 +1,9 @@
+.chart-title{
+    -fx-text-fill: white;
+    -fx-font-weight:bold;
+}
+
+.chart-content {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
